@@ -451,5 +451,9 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
+<<<<<<< HEAD
   "updatedAt": "2018-09-18T16:05:45.061Z"
+=======
+  "updatedAt": "2018-09-15T11:46:01.560Z"
+>>>>>>> master
 }
