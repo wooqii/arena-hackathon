@@ -2,7 +2,7 @@ pragma solidity ^0.4.23;
 
 import "./StandardToken.sol";
 import "./BurnableToken.sol";
-import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
+import "./Ownable.sol";
 
 contract HyconToken is StandardToken, BurnableToken, Ownable {
 
@@ -28,7 +28,7 @@ contract HyconToken is StandardToken, BurnableToken, Ownable {
 
     HyconToken token;
 
-    constructor() public {
+    constructor () public {
         owner = msg.sender;
         balances[0x90f8bf6a479f320ead074411a4b0e7944ea8c9c1] = totalSupply;
         emit Transfer(address(0), 0x90f8bf6a479f320ead074411a4b0e7944ea8c9c1, totalSupply);
